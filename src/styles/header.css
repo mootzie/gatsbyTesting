@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.nav-container{
+    display: flex;
+    height: 100pc;
+    align-items: center;
+    background-color: orange;
+    
+}
+.scriptText{
+    font-family: "League Script";
+    font-size: 7rem;
+    text-decoration: underline;
+    border-bottom: .24rem solid white;
+    border-top: .24rem solid white;
+    padding-bottom: 0;
+    ;
+    border-radius: 1rem;
+    font-weight: 600;
+    text-transform: lowercase;
+    background: linear-gradient(to right, #f32170, #cdffd5, #cf23cf, #448eee);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-align: left;
+    
+text-shadow: 0 2px 3px #310101, 
+1px 3px 4px #c8ca2a, 
+0 8px 3px #be1b1b, 
+0 11px 4px #9e9c35,
+0 14px 4px #427fa8,
+0 17px 4px #343434,
+0 20px 4px #fdfdfd;
+}
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+body.scriptText.small
+  {
+    font-size: 1rem !important;
+  }
+.nav__item{
+    margin-top: 20px;
+    padding: 0.5rem 5px;
+    border-radius: .75rem 0.75rem;
+    border-top: 1px solid orange;
+    border-right: 1px solid orange;
+    border-left: 0.5rem solid rgb(252, 141, 15);
+    border-bottom: 10px solid orange;
+}
+.nav__item.__cta{
+    font-family: "Raleway";
+}
+.nav-items:hover{
+    background-color: red;
+}
+.nav__items{
+    font-family: "Roboto";
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    margin: 0;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.nav__items .nav__item {
+    text-decoration: none;
+    margin-left: 5px;
+}
+.nav__item a{
+    text-decoration: none;
+    color: black;
+    padding: 20px 20px;
+}
+.nav__item a:hover{
+    cursor: pointer;
+}
+.logo__container{
+    width: 100px;
+    height: 100px;
+    margin: 1rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.logo__container img{
+    height: 100px;
+}
+.nav_items__container{
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+}
+.nav_items__container .nav__items .nav__item{
+    margin-left: 1rem;
+}
+.nav__item.__cta{
+    /* border: 0.5rem solid black; */
+    border-radius: 1rem;
+    background-color: rgb(247, 162, 6);
+    color: white;
+    margin-left: 1rem;
+    padding: 1rem 3rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.nav__item{
+    background-color: rgba(255, 166, 0, 0.932);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.nav__item a{
+    color: white;
+}
+.nav__item.__cta a {
+    color: white;
+}

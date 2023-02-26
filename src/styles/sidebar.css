@@ -1,0 +1,11 @@
+.sidebar__container{
+    padding: 2rem 2rem;
+    display: flex;
+    width: 200px;
+    position: absolute;
+    right: 770px;
+    height: 178px;
+    
+    background-color: rgba(0, 0, 0, 0.911);
+    border-radius: 2rem;
+}

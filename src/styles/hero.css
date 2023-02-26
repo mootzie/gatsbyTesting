@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap');
+
+.hero__container{
+    height: 45vh;
+    width: 100%;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: 0rem 0;
+    background: url("https://images.unsplash.com/photo-1548504769-900b70ed122e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-left: 01rem solid rgba(24, 119, 173, 0.445);;
+    color: rgb(235, 194, 15);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+.hero__row{
+    margin-left: 4rem;
+    margin-top: 20px
+}
+.hero__textContainer{
+    display: flex;
+    flex-direction: column;
+}
+.hero__heading{
+    font-size: 4rem;
+    border-top: 8rem solid rgb(0, 0, 0);
+    border-radius: 100% 100%;
+    text-align: left;
+    font-family: 'Roboto';
+    border-bottom: 9rem solid rgb(0, 0, 0);
+
+
+     /* text-transform: capitalize; */
+   
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+color: white;
+  animation: textclip 2s linear infinite white;
+  display: inline-block;
+}
+.hero__subheading{
+  text-transform: capitalize;
+ 
+    font-size: 1.15rem;
+    text-align: right;
+    font-family: 'Roboto';
+ -webkit-background-clip: text;
+  /* text-transform: capitalize; */
+  background-image: linear-gradient(
+    -225deg,
+    #c2b3f8 0%,
+    #e0d1f0 29%,
+    #5c8adf 67%,
+    #ffffff 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: textclip 4s linear infinite;
+  display: inline-block;
+  color: white;
+  font-size: 1rem;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.scriptText{
+    font-family: "League Script";
+    font-size: 7rem;
+    text-decoration: underline;
+    /* border-bottom: .84rem solid rgb(223, 88, 26);
+    border-top: .84rem solid rgb(223, 108, 14); */
+    padding-bottom: 0;
+    ;
+    border-radius: 10rem;
+    box-shadow: rgba(46, 41, 51, var(--rootBoxShadowOpacity)) 0px 7px 19px
+              11px,
+            rgba(71, 63, 79, var(--rootBoxShadowOpacity)) 0px 2px 4px;;
+    font-weight: 600;
+    text-transform: lowercase;
+    background:rgb(255, 255, 255);
+    /* white; linear-gradient(to right, #f32170, #cdffd5, #cf23cf, #448eee);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; */
+    text-align: left;
+    
+text-shadow: 0 2px 3px #310101, 
+1px 3px 4px #c8ca2a, 
+0 8px 3px #be1b1b, 
+0 11px 4px #9e9c35,
+0 14px 4px #427fa8,
+0 17px 4px #343434,
+0 20px 4px #fdfdfd;
+}
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  body {
+    background: linear-gradient(130deg, #ff7e00, #ffffff, #5cff00);
+    position: absolute;
+    inset: 0;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    overflow: hidden;
+
+  }
+  
+  /* This is just to transition when you change the viewport size. */
+  * {
+    transition: all 0.25s ease-out;
+  }
+ 
+
+  :root{
+    --overlay-color-1: #ff0000;
+    --overlay-color-2: #0000ff;
+    --anim-duration: 2s;
+}
+
+#gradient {
+    opacity: 0.8;
+    background: none;
+}
+
+#gradient:after,
+#gradient:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+}
+
+#gradient:before {
+    background: linear-gradient(135deg, var(--overlay-color-2) 0%, var(--overlay-color-1) 100%);
+    animation: OpacityAnim var(--anim-duration) ease-in-out 0s infinite alternate;
+}
+
+#gradient:after {
+    background: linear-gradient(135deg, var(--overlay-color-1) 0%, var(--overlay-color-2) 100%);
+    animation: OpacityAnim var(--anim-duration) ease-in-out calc(-1 * var(--anim-duration)) infinite alternate;
+}
+
+@keyframes OpacityAnim {
+    0%{opacity: 1.0}
+    100%{opacity: 0.0}
+}
+
+.hero__subheading__text{
+  font-family: 'roboto';
+  color: rgb(0, 0, 0);
+  width: 800;
+  font-size: 17px;
+
+}
+.center{
+  margin-top: 40px;
+  margin-bottom: 100px;
+  position:absolute;
+  top:85%;
+  left:50%;
+  transform:prespective(1000px) translate(-50%,-50%);
+  transform:skewY(15deg);
+  transition:0.5s;
+}
+
+.center:hover{
+  transform:prespective(1000px) translate(-50%,-50%);
+  transform:skewY(0deg);
+}
+
+.center h1 span{
+  position:absolute;
+  top:20;
+  left:0;
+  transform:translate(-50%,-50%);
+  margin:0;
+  padding:0;
+  text-transform:uppercase;
+  font-size:5em;
+  color:#000000;
+  transform-style:preserve-3d;
+  transition:0.8s;
+}
+.center h1 span:nth-child(1){
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+}
+
+
+
+.center h1 span:nth-child(2){
+  color:#5E17EB;
+  transform:translate(-50%,-50%) skewX(-60deg);
+  left:-38px;
+  clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
+}
+
+.center h1 span:nth-child(3){
+  transform:translate(-50%,-50%) skewY(0deg);
+  left:-76px;
+  clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
+}
+
+.center:hover h1 span:nth-child(2), 
+.center:hover h1 span:nth-child(3){
+  transform:translate(-50%,-50%) skewX(0deg);
+  left:0;
+  color:#000000;
+}
