@@ -2,9 +2,6 @@
   "name": "my-gatsby-site",
   "version": "1.0.0",
   "private": true,
-  "engines": {
-    "node": "19.x"
-  },
   "description": "my-gatsby-site",
   "keywords": [
     "gatsby"
